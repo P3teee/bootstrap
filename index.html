@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta chatset="UTF-8">
+	<meta charset="UTF-8">
 	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="Stylesheet.css">
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -13,8 +16,104 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-	<h1>Melodifestivalen</h1>
-	<p>Melodifestivalen är en återkommande svensk musiktävling, anordnad av Sveriges Television. Tävlingens vinnare blir Sveriges bidrag till den europeiska musiktävlingen Eurovision Song Contest (ESC). Sedan 1958 har Sveriges artist och bidrag till Eurovision Song Contest valts ut genom en nationell final, med undantag för åren 1964, 1970 och 1976. Dessa tre år avstod Sverige deltagande i ESC av olika skäl. Den nationella finalen har sedan 1967 gått under namnet Melodifestival, som år 2001 ändrades till Melodifestivalen. Programmet är ett av Sveriges mest sedda. Rekordet sattes 2006, då finalen hade 4 242 000 tittare.
-	</p>
+	<div id="Info">
+		<h1>Melodifestivalen</h1>
+			<p>Melodifestivalen är en återkommande svensk musiktävling, anordnad av Sveriges Television. Tävlingens vinnare blir Sveriges bidrag till den europeiska musiktävlingen Eurovision Song Contest (ESC). Sedan 1958 har Sveriges artist och bidrag till Eurovision Song Contest valts ut genom en nationell final, med undantag för åren 1964, 1970 och 1976. Dessa tre år avstod Sverige deltagande i ESC av olika skäl. Den nationella finalen har sedan 1967 gått under namnet Melodifestival, som år 2001 ändrades till Melodifestivalen. Programmet är ett av Sveriges mest sedda. Rekordet sattes 2006, då finalen hade 4 242 000 tittare.
+			</p>
+	</div>
+	<table class="table">
+		<tr>
+			<td><h3>Bild</h3></td>
+			<td><h3>Namn</h3></td>
+		</tr>
+  		<tr>
+  			<td><img src="./placeholder.png" alt="..." class="img-thumbnail"></td>
+  			<td><p>Samir & Viktor</p></td>
+  		</tr>
+  		<tr>
+  			<td><img src="./placeholder.png" alt="..." class="img-thumbnail"></td>
+  			<td><p>JTR</p></td>
+  		</tr>
+  		<tr>
+  			<td><img src="./placeholder.png" alt="..." class="img-thumbnail"></td>
+  			<td><p>Dinah Nah</p></td>
+  		</tr>
+  		<tr>
+  			<td><img src="./placeholder.png" alt="..." class="img-thumbnail"></td>
+  			<td><p>Jon Henrik Fjällgren</p></td>
+  		</tr>
+  		<tr>
+  			<td><img src="./placeholder.png" alt="..." class="img-thumbnail"></td>
+  			<td><p>Jessica Andersson</p></td>
+  		</tr>
+  		<tr>
+  			<td><img src="./placeholder.png" alt="..." class="img-thumbnail"></td>
+  			<td><p>Måns Zelmerlöw</p></td>
+  		</tr>
+  		<tr>
+  			<td><img src="./placeholder.png" alt="..." class="img-thumbnail"></td>
+  			<td><p>Linus Svenning</p></td>
+  		</tr>
+  		<tr>
+  			<td><img src="./placeholder.png" alt="..." class="img-thumbnail"></td>
+  			<td><p>Isa</p></td>
+  		</tr>
+  		<tr>
+  			<td><img src="./placeholder.png" alt="..." class="img-thumbnail"></td>
+  			<td><p>Magnus Carlsson</p></td>
+  		</tr>
+  		<tr>
+  			<td><img src="./placeholder.png" alt="..." class="img-thumbnail"></td>
+  			<td><p>Eric Saade</p></td>
+  		</tr>
+  		<tr>
+  			<td><img src="./placeholder.png" alt="..." class="img-thumbnail"></td>
+  			<td><p>Mariette</p></td>
+  		</tr>
+  		<tr>
+  			<td><img src="./placeholder.png" alt="..." class="img-thumbnail"></td>
+  			<td><p>Hasse Andersson</p></td>
+  		</tr>
+	</table>
+
+
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label for="Select" class="col-sm-2 control-label">Välj röst</label>
+			<div class="col-sm-10">
+				<select id="disabledSelect" class="form-control">
+ 					<option>Samir & Viktor</option>
+  					<option>JTR</option>
+  					<option>Dinah Nah</option>
+ 					<option>Jon Henrik Fjällgren</option>
+ 	 				<option>Jessica Andersson</option>
+ 	 				<option>Måns Zelmerlöw</option>
+  					<option>Linus Svenning</option>
+  					<option>Isa</option>
+ 					<option>Magnus Carlsson</option>
+ 	 				<option>Eric Saade</option>
+ 	 				<option>Mariette</option>
+  					<option>Hasse Andersson</option>
+				</select>
+			</div>
+		</div>
+ 	 <div class="form-group">
+   		 <label for="inputEmail3" class="col-sm-2 control-label">Namn</label>
+    		<div class="col-sm-10">
+      			<input type="email" class="form-control" id="inputEmail3" placeholder="Namn">
+   			</div>
+ 	 </div>
+	<div class="form-group">
+    	<label for="inputPassword3" class="col-sm-2 control-label">Telefonnummer</label>
+    		<div class="col-sm-10">
+      			<input type="password" class="form-control" id="inputPassword3" placeholder="Telefonnummer">
+    		</div>
+  		</div>
+  	<div class="form-group">
+   		<div class="col-sm-offset-2 col-sm-10">
+      		<button type="submit" class="btn btn-primary">Skicka in</button>
+    	</div>
+  	</div>
+</form>
 </body>
 </html>
